@@ -1,0 +1,9 @@
+C:\DevOps\TestAutomation\BrowserStackSampleTest\BrowserStackSampleTest\bin\Debug\netstandard2.0\BrowserStackSampleTest.deps.json
+C:\DevOps\TestAutomation\BrowserStackSampleTest\BrowserStackSampleTest\bin\Debug\netstandard2.0\BrowserStackSampleTest.dll
+C:\DevOps\TestAutomation\BrowserStackSampleTest\BrowserStackSampleTest\obj\Debug\netstandard2.0\BrowserStackSampleTest.csprojAssemblyReference.cache
+C:\DevOps\TestAutomation\BrowserStackSampleTest\BrowserStackSampleTest\obj\Debug\netstandard2.0\BrowserStackSampleTest.csproj.CoreCompileInputs.cache
+C:\DevOps\TestAutomation\BrowserStackSampleTest\BrowserStackSampleTest\obj\Debug\netstandard2.0\BrowserStackSampleTest.AssemblyInfoInputs.cache
+C:\DevOps\TestAutomation\BrowserStackSampleTest\BrowserStackSampleTest\obj\Debug\netstandard2.0\BrowserStackSampleTest.AssemblyInfo.cs
+C:\DevOps\TestAutomation\BrowserStackSampleTest\BrowserStackSampleTest\bin\Debug\netstandard2.0\BrowserStackSampleTest.pdb
+C:\DevOps\TestAutomation\BrowserStackSampleTest\BrowserStackSampleTest\obj\Debug\netstandard2.0\BrowserStackSampleTest.dll
+C:\DevOps\TestAutomation\BrowserStackSampleTest\BrowserStackSampleTest\obj\Debug\netstandard2.0\BrowserStackSampleTest.pdb
