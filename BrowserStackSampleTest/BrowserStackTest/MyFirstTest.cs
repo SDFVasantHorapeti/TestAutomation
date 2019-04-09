@@ -10,7 +10,7 @@ namespace BrowserStackTest
     {
         [Test]
         [Obsolete]
-        public void SearchBrowserStack()
+        public void UserLogin()
         {
             IWebDriver driver;
             DesiredCapabilities caps = new DesiredCapabilities();
@@ -38,7 +38,7 @@ namespace BrowserStackTest
 
         [Test]
         [Obsolete]
-        public void SearchBrother()
+        public void ResetPassword()
         {
             IWebDriver driver;
             DesiredCapabilities caps = new DesiredCapabilities();
