@@ -6,7 +6,7 @@ using OpenQA.Selenium.Remote;
 namespace BrowserStackTest
 {
     [TestFixture]
-    class MyFirstTest
+    class AccountManagement
     {
         [Test]
         [Obsolete]
