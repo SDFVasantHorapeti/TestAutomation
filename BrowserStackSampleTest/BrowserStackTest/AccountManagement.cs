@@ -6,7 +6,7 @@ using OpenQA.Selenium.Remote;
 namespace BrowserStackTest
 {
     [TestFixture]
-    class MyFirstTest
+    class AccountManagement
     {
         [Test]
         [Obsolete]
@@ -28,11 +28,12 @@ namespace BrowserStackTest
             driver.Navigate().GoToUrl("http://www.google.com");
             Console.WriteLine(driver.Title);
 
+            string expectedResults = TestContext.Parameters.Get("SearchResultKey");
             IWebElement query = driver.FindElement(By.Name("q"));
             query.SendKeys("BrowserStack");
             query.Submit();
             Console.WriteLine(driver.Title);
-            Assert.AreEqual("BrowserStack - Google zoeken", driver.Title);
+            Assert.AreEqual(expectedResults, driver.Title);
             driver.Quit();
         }
 
