@@ -28,7 +28,10 @@ namespace BrowserStackTest
             driver.Navigate().GoToUrl("http://www.google.com");
             Console.WriteLine(driver.Title);
 
-            string expectedResults = TestContext.Parameters.Get("SearchResultKey");
+            //string expectedResults = TestContext.Parameters.Get("SearchResultKey");
+            string expectedResults = System.Environment.GetEnvironmentVariable("SearchResultKey");
+
+            Console.WriteLine(expectedResults);
             IWebElement query = driver.FindElement(By.Name("q"));
             query.SendKeys("BrowserStack");
             query.Submit();
