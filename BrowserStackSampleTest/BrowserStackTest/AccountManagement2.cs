@@ -9,6 +9,7 @@ namespace BrowserStackTest
     class AccountManagement2
     {
         [Test]
+        [Parallelizable]
         [Obsolete]
         public void UserLogin1()
         {
@@ -41,6 +42,7 @@ namespace BrowserStackTest
         }
 
         [Test]
+        [Parallelizable]
         [Obsolete]
         public void UserLogin2()
         {
@@ -73,6 +75,7 @@ namespace BrowserStackTest
         }
 
         [Test]
+        [Parallelizable]
         [Obsolete]
         public void UserLogin3()
         {
@@ -105,6 +108,7 @@ namespace BrowserStackTest
         }
 
         [Test]
+        [Parallelizable]
         [Obsolete]
         public void UserLogin4()
         {
@@ -136,6 +140,7 @@ namespace BrowserStackTest
             driver.Quit();
         }
         [Test]
+        [Parallelizable]
         [Obsolete]
         public void UserLogin5()
         {
@@ -167,6 +172,7 @@ namespace BrowserStackTest
             driver.Quit();
         }
         [Test]
+        [Parallelizable]
         [Obsolete]
         public void ResetPassword1()
         {
@@ -194,6 +200,7 @@ namespace BrowserStackTest
             driver.Quit();
         }
         [Test]
+        [Parallelizable]
         [Obsolete]
         public void ResetPassword2()
         {
@@ -221,6 +228,7 @@ namespace BrowserStackTest
             driver.Quit();
         }
         [Test]
+        [Parallelizable]
         [Obsolete]
         public void ResetPassword3()
         {
@@ -248,6 +256,7 @@ namespace BrowserStackTest
             driver.Quit();
         }
         [Test]
+        [Parallelizable]
         [Obsolete]
         public void ResetPassword4()
         {
@@ -275,6 +284,7 @@ namespace BrowserStackTest
             driver.Quit();
         }
         [Test]
+        [Parallelizable]
         [Obsolete]
         public void ResetPassword5()
         {
