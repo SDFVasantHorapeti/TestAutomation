@@ -8,6 +8,12 @@ namespace BrowserStackTest
     [TestFixture]
     class AccountManagement
     {
+
+        public static string GetSearchKey()
+        {
+            return System.Environment.GetEnvironmentVariable("SearchResultKey");
+        }
+
         [Test]
         [Parallelizable]
         [Obsolete]

@@ -60,6 +60,7 @@
   <ItemGroup>
     <Compile Include="AccountManagement.cs" />
     <Compile Include="AccountManagement2.cs" />
+    <Compile Include="Common.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
