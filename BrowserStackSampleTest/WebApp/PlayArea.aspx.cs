@@ -26,8 +26,8 @@ namespace WebApp
             caps.SetCapability("os", "Windows");
             caps.SetCapability("os_version", "10");
             caps.SetCapability("resolution", "1024x768");
-            caps.SetCapability("browserstack.user", "vasanthorapeti1");
-            caps.SetCapability("browserstack.key", "vk61BzMs3DrmxHCuwzAp");
+            caps.SetCapability("browserstack.user", "vasanthorapeti2");
+            caps.SetCapability("browserstack.key", "qSHea3BnLWduVXdm57sR");
 
             driver = new RemoteWebDriver(
               new Uri("http://hub-cloud.browserstack.com/wd/hub/"), caps
