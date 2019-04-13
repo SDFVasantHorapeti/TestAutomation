@@ -2,6 +2,7 @@
 using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
+using BrowserStackTest;
 
 namespace BrowserStackTest2
 {
@@ -30,7 +31,8 @@ namespace BrowserStackTest2
             Console.WriteLine(driver.Title);
 
             //string expectedResults = TestContext.Parameters.Get("SearchResultKey");
-            string expectedResults = System.Environment.GetEnvironmentVariable("SearchResultKey");
+            
+            string expectedResults = Common.GetSearchKey();
 
             Console.WriteLine(expectedResults);
             IWebElement query = driver.FindElement(By.Name("q"));
