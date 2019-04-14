@@ -7,6 +7,7 @@ using BrowserStackTest;
 namespace BrowserStackTest2
 {
     [TestFixture]
+    [Parallelizable]
     class AccountManagement1
     {
         [Test]
