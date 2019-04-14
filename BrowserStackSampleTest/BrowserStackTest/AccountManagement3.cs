@@ -5,8 +5,8 @@ using OpenQA.Selenium.Remote;
 
 namespace BrowserStackTest
 {
-    [Parallelizable]
     [TestFixture]
+    [Parallelizable]
     class AccountManagement3
     {
         [Test]

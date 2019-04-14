@@ -6,10 +6,11 @@ using OpenQA.Selenium.Remote;
 namespace BrowserStackTest
 {
     [TestFixture]
+    [Parallelizable]
     class AccountManagement2
     {
         [Test]
-        [NonParallelizable]
+        [Parallelizable]
         [Obsolete]
         public void UserLogin1()
         {
