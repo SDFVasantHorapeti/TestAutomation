@@ -18,3 +18,5 @@ C:\DevOps\Git\TestAutomation\BrowserStackSampleTest\BrowserStackTest2\obj\Debug\
 C:\DevOps\Git\TestAutomation\BrowserStackSampleTest\BrowserStackTest2\obj\Debug\BrowserStackTest2.csproj.CopyComplete
 C:\DevOps\Git\TestAutomation\BrowserStackSampleTest\BrowserStackTest2\obj\Debug\BrowserStackTest2.dll
 C:\DevOps\Git\TestAutomation\BrowserStackSampleTest\BrowserStackTest2\obj\Debug\BrowserStackTest2.pdb
+C:\DevOps\Git\TestAutomation\BrowserStackSampleTest\BrowserStackTest2\bin\Debug\BrowserStackTest.dll
+C:\DevOps\Git\TestAutomation\BrowserStackSampleTest\BrowserStackTest2\bin\Debug\BrowserStackTest.pdb
