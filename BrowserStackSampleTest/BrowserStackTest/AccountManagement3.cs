@@ -5,23 +5,23 @@ using OpenQA.Selenium.Remote;
 
 namespace BrowserStackTest
 {
+    [Parallelizable]
     [TestFixture]
-    class AccountManagement2
+    class AccountManagement3
     {
         [Test]
-        [NonParallelizable]
         [Obsolete]
         public void UserLogin1()
         {
             IWebDriver driver;
             DesiredCapabilities caps = new DesiredCapabilities();
-            caps.SetCapability("browser", "Chrome");
-            caps.SetCapability("browser_version", "62.0");
-            caps.SetCapability("os", "Windows");
-            caps.SetCapability("os_version", "10");
-            caps.SetCapability("resolution", "1024x768");
-            caps.SetCapability("browserstack.user", "vasanthorapeti2");
-            caps.SetCapability("browserstack.key", "qSHea3BnLWduVXdm57sR");
+            caps.SetCapability("zal:browser", "Chrome");
+            caps.SetCapability("zal:browser_version", "62.0");
+            caps.SetCapability("zal:os", "Windows");
+            caps.SetCapability("zal:os_version", "10");
+            caps.SetCapability("zal:resolution", "1024x768");
+            caps.SetCapability("zal:browserstack.user", "vasanthorapeti2");
+            caps.SetCapability("zal:browserstack.key", "qSHea3BnLWduVXdm57sR");
 
             driver = new RemoteWebDriver(
               new Uri("http://hub-cloud.browserstack.com/wd/hub/"), caps

@@ -59,6 +59,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AccountManagement.cs" />
+    <Compile Include="AccountManagement3.cs" />
     <Compile Include="AccountManagement2.cs" />
     <Compile Include="Common.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
