@@ -128,7 +128,6 @@ C:\DevOps\Git\TestAutomation\BrowserStackSampleTest\WebApp\bin\Selenium.WebDrive
 C:\DevOps\Git\TestAutomation\BrowserStackSampleTest\WebApp\bin\WebDriver.xml
 C:\DevOps\Git\TestAutomation\BrowserStackSampleTest\WebApp\bin\WebDriver.Support.xml
 C:\DevOps\Git\TestAutomation\BrowserStackSampleTest\WebApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\DevOps\Git\TestAutomation\BrowserStackSampleTest\WebApp\obj\Debug\WebApp.csprojAssemblyReference.cache
 C:\DevOps\Git\TestAutomation\BrowserStackSampleTest\WebApp\obj\Debug\WebApp.csproj.CoreCompileInputs.cache
 C:\DevOps\Git\TestAutomation\BrowserStackSampleTest\WebApp\obj\Debug\WebApp.csproj.CopyComplete
 C:\DevOps\Git\TestAutomation\BrowserStackSampleTest\WebApp\obj\Debug\WebApp.dll
