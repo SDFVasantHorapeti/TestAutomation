@@ -2,6 +2,7 @@
 using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
+using OpenQA.Selenium.Chrome;
 
 namespace BrowserStackTest
 {
@@ -21,6 +22,16 @@ namespace BrowserStackTest
         public void UserLogin1()
         {
             IWebDriver driver;
+            ChromeOptions options = new ChromeOptions();
+            options.AddAdditionalCapability("os_version", "10", true);
+            options.AddAdditionalCapability("native_events", "false", true);
+            options.AddAdditionalCapability("os", "Windows", true);
+            options.AddAdditionalCapability("browser_version", "62", true);
+
+            //options.AddAdditionalCapability("browserstack.user", "vasanthorapeti2");
+            //options.AddAdditionalCapability("browserstack.key", "qSHea3BnLWduVXdm57sR");
+
+            /*
             DesiredCapabilities caps = new DesiredCapabilities();
             caps.SetCapability("browser", "Chrome");
             caps.SetCapability("browser_version", "62.0");
@@ -29,10 +40,10 @@ namespace BrowserStackTest
             caps.SetCapability("resolution", "1024x768");
             caps.SetCapability("browserstack.user", "vasanthorapeti1");
             caps.SetCapability("browserstack.key", "vk61BzMs3DrmxHCuwzAp");
+            */
 
-            driver = new RemoteWebDriver(
-              new Uri("http://hub-cloud.browserstack.com/wd/hub/"), caps
-            );
+            driver = new RemoteWebDriver(new Uri("http://vasanthorapeti2:qSHea3BnLWduVXdm57sR@hub-cloud.browserstack.com/wd/hub/"), options.ToCapabilities());
+
             driver.Navigate().GoToUrl("http://www.google.com");
             Console.WriteLine(driver.Title);
 
@@ -48,275 +59,5 @@ namespace BrowserStackTest
             driver.Quit();
         }
 
-        [Test]
-        [Parallelizable]
-        [Obsolete]
-        public void UserLogin2()
-        {
-            IWebDriver driver;
-            DesiredCapabilities caps = new DesiredCapabilities();
-            caps.SetCapability("browser", "Chrome");
-            caps.SetCapability("browser_version", "62.0");
-            caps.SetCapability("os", "Windows");
-            caps.SetCapability("os_version", "10");
-            caps.SetCapability("resolution", "1024x768");
-            caps.SetCapability("browserstack.user", "vasanthorapeti1");
-            caps.SetCapability("browserstack.key", "vk61BzMs3DrmxHCuwzAp");
-
-            driver = new RemoteWebDriver(
-              new Uri("http://hub-cloud.browserstack.com/wd/hub/"), caps
-            );
-            driver.Navigate().GoToUrl("http://www.google.com");
-            Console.WriteLine(driver.Title);
-
-            //string expectedResults = TestContext.Parameters.Get("SearchResultKey");
-            string expectedResults = System.Environment.GetEnvironmentVariable("SearchResultKey");
-
-            Console.WriteLine(expectedResults);
-            IWebElement query = driver.FindElement(By.Name("q"));
-            query.SendKeys("BrowserStack");
-            query.Submit();
-            Console.WriteLine(driver.Title);
-            Assert.AreEqual(expectedResults, driver.Title);
-            driver.Quit();
-        }
-
-        [Test]
-        [Parallelizable]
-        [Obsolete]
-        public void UserLogin3()
-        {
-            IWebDriver driver;
-            DesiredCapabilities caps = new DesiredCapabilities();
-            caps.SetCapability("browser", "Chrome");
-            caps.SetCapability("browser_version", "62.0");
-            caps.SetCapability("os", "Windows");
-            caps.SetCapability("os_version", "10");
-            caps.SetCapability("resolution", "1024x768");
-            caps.SetCapability("browserstack.user", "vasanthorapeti1");
-            caps.SetCapability("browserstack.key", "vk61BzMs3DrmxHCuwzAp");
-
-            driver = new RemoteWebDriver(
-              new Uri("http://hub-cloud.browserstack.com/wd/hub/"), caps
-            );
-            driver.Navigate().GoToUrl("http://www.google.com");
-            Console.WriteLine(driver.Title);
-
-            //string expectedResults = TestContext.Parameters.Get("SearchResultKey");
-            string expectedResults = System.Environment.GetEnvironmentVariable("SearchResultKey");
-
-            Console.WriteLine(expectedResults);
-            IWebElement query = driver.FindElement(By.Name("q"));
-            query.SendKeys("BrowserStack");
-            query.Submit();
-            Console.WriteLine(driver.Title);
-            Assert.AreEqual(expectedResults, driver.Title);
-            driver.Quit();
-        }
-
-        [Test]
-        [Parallelizable]
-        [Obsolete]
-        public void UserLogin4()
-        {
-            IWebDriver driver;
-            DesiredCapabilities caps = new DesiredCapabilities();
-            caps.SetCapability("browser", "Chrome");
-            caps.SetCapability("browser_version", "62.0");
-            caps.SetCapability("os", "Windows");
-            caps.SetCapability("os_version", "10");
-            caps.SetCapability("resolution", "1024x768");
-            caps.SetCapability("browserstack.user", "vasanthorapeti1");
-            caps.SetCapability("browserstack.key", "vk61BzMs3DrmxHCuwzAp");
-
-            driver = new RemoteWebDriver(
-              new Uri("http://hub-cloud.browserstack.com/wd/hub/"), caps
-            );
-            driver.Navigate().GoToUrl("http://www.google.com");
-            Console.WriteLine(driver.Title);
-
-            //string expectedResults = TestContext.Parameters.Get("SearchResultKey");
-            string expectedResults = System.Environment.GetEnvironmentVariable("SearchResultKey");
-
-            Console.WriteLine(expectedResults);
-            IWebElement query = driver.FindElement(By.Name("q"));
-            query.SendKeys("BrowserStack");
-            query.Submit();
-            Console.WriteLine(driver.Title);
-            Assert.AreEqual(expectedResults, driver.Title);
-            driver.Quit();
-        }
-        [Test]
-        [Parallelizable]
-        [Obsolete]
-        public void UserLogin5()
-        {
-            IWebDriver driver;
-            DesiredCapabilities caps = new DesiredCapabilities();
-            caps.SetCapability("browser", "Chrome");
-            caps.SetCapability("browser_version", "62.0");
-            caps.SetCapability("os", "Windows");
-            caps.SetCapability("os_version", "10");
-            caps.SetCapability("resolution", "1024x768");
-            caps.SetCapability("browserstack.user", "vasanthorapeti1");
-            caps.SetCapability("browserstack.key", "vk61BzMs3DrmxHCuwzAp");
-
-            driver = new RemoteWebDriver(
-              new Uri("http://hub-cloud.browserstack.com/wd/hub/"), caps
-            );
-            driver.Navigate().GoToUrl("http://www.google.com");
-            Console.WriteLine(driver.Title);
-
-            //string expectedResults = TestContext.Parameters.Get("SearchResultKey");
-            string expectedResults = System.Environment.GetEnvironmentVariable("SearchResultKey");
-
-            Console.WriteLine(expectedResults);
-            IWebElement query = driver.FindElement(By.Name("q"));
-            query.SendKeys("BrowserStack");
-            query.Submit();
-            Console.WriteLine(driver.Title);
-            Assert.AreEqual(expectedResults, driver.Title);
-            driver.Quit();
-        }
-        [Test]
-        [Parallelizable]
-        [Obsolete]
-        public void ResetPassword1()
-        {
-            IWebDriver driver;
-            DesiredCapabilities caps = new DesiredCapabilities();
-            caps.SetCapability("browser", "Chrome");
-            caps.SetCapability("browser_version", "62.0");
-            caps.SetCapability("os", "Windows");
-            caps.SetCapability("os_version", "10");
-            caps.SetCapability("resolution", "1024x768");
-            caps.SetCapability("browserstack.user", "vasanthorapeti1");
-            caps.SetCapability("browserstack.key", "vk61BzMs3DrmxHCuwzAp");
-
-            driver = new RemoteWebDriver(
-              new Uri("http://hub-cloud.browserstack.com/wd/hub/"), caps
-            );
-            driver.Navigate().GoToUrl("http://www.google.com");
-            Console.WriteLine(driver.Title);
-
-            IWebElement query = driver.FindElement(By.Name("q"));
-            query.SendKeys("Brother International");
-            query.Submit();
-            Console.WriteLine(driver.Title);
-            Assert.AreEqual("Brother International - Google zoeken", driver.Title);
-            driver.Quit();
-        }
-        [Test]
-        [Parallelizable]
-        [Obsolete]
-        public void ResetPassword2()
-        {
-            IWebDriver driver;
-            DesiredCapabilities caps = new DesiredCapabilities();
-            caps.SetCapability("browser", "Chrome");
-            caps.SetCapability("browser_version", "62.0");
-            caps.SetCapability("os", "Windows");
-            caps.SetCapability("os_version", "10");
-            caps.SetCapability("resolution", "1024x768");
-            caps.SetCapability("browserstack.user", "vasanthorapeti1");
-            caps.SetCapability("browserstack.key", "vk61BzMs3DrmxHCuwzAp");
-
-            driver = new RemoteWebDriver(
-              new Uri("http://hub-cloud.browserstack.com/wd/hub/"), caps
-            );
-            driver.Navigate().GoToUrl("http://www.google.com");
-            Console.WriteLine(driver.Title);
-
-            IWebElement query = driver.FindElement(By.Name("q"));
-            query.SendKeys("Brother International");
-            query.Submit();
-            Console.WriteLine(driver.Title);
-            Assert.AreEqual("Brother International - Google zoeken", driver.Title);
-            driver.Quit();
-        }
-        [Test]
-        [Parallelizable]
-        [Obsolete]
-        public void ResetPassword3()
-        {
-            IWebDriver driver;
-            DesiredCapabilities caps = new DesiredCapabilities();
-            caps.SetCapability("browser", "Chrome");
-            caps.SetCapability("browser_version", "62.0");
-            caps.SetCapability("os", "Windows");
-            caps.SetCapability("os_version", "10");
-            caps.SetCapability("resolution", "1024x768");
-            caps.SetCapability("browserstack.user", "vasanthorapeti1");
-            caps.SetCapability("browserstack.key", "vk61BzMs3DrmxHCuwzAp");
-
-            driver = new RemoteWebDriver(
-              new Uri("http://hub-cloud.browserstack.com/wd/hub/"), caps
-            );
-            driver.Navigate().GoToUrl("http://www.google.com");
-            Console.WriteLine(driver.Title);
-
-            IWebElement query = driver.FindElement(By.Name("q"));
-            query.SendKeys("Brother International");
-            query.Submit();
-            Console.WriteLine(driver.Title);
-            Assert.AreEqual("Brother International - Google zoeken", driver.Title);
-            driver.Quit();
-        }
-        [Test]
-        [Parallelizable]
-        [Obsolete]
-        public void ResetPassword4()
-        {
-            IWebDriver driver;
-            DesiredCapabilities caps = new DesiredCapabilities();
-            caps.SetCapability("browser", "Chrome");
-            caps.SetCapability("browser_version", "62.0");
-            caps.SetCapability("os", "Windows");
-            caps.SetCapability("os_version", "10");
-            caps.SetCapability("resolution", "1024x768");
-            caps.SetCapability("browserstack.user", "vasanthorapeti1");
-            caps.SetCapability("browserstack.key", "vk61BzMs3DrmxHCuwzAp");
-
-            driver = new RemoteWebDriver(
-              new Uri("http://hub-cloud.browserstack.com/wd/hub/"), caps
-            );
-            driver.Navigate().GoToUrl("http://www.google.com");
-            Console.WriteLine(driver.Title);
-
-            IWebElement query = driver.FindElement(By.Name("q"));
-            query.SendKeys("Brother International");
-            query.Submit();
-            Console.WriteLine(driver.Title);
-            Assert.AreEqual("Brother International - Google zoeken", driver.Title);
-            driver.Quit();
-        }
-        [Test]
-        [Parallelizable]
-        [Obsolete]
-        public void ResetPassword5()
-        {
-            IWebDriver driver;
-            DesiredCapabilities caps = new DesiredCapabilities();
-            caps.SetCapability("browser", "Chrome");
-            caps.SetCapability("browser_version", "62.0");
-            caps.SetCapability("os", "Windows");
-            caps.SetCapability("os_version", "10");
-            caps.SetCapability("resolution", "1024x768");
-            caps.SetCapability("browserstack.user", "vasanthorapeti1");
-            caps.SetCapability("browserstack.key", "vk61BzMs3DrmxHCuwzAp");
-
-            driver = new RemoteWebDriver(
-              new Uri("http://hub-cloud.browserstack.com/wd/hub/"), caps
-            );
-            driver.Navigate().GoToUrl("http://www.google.com");
-            Console.WriteLine(driver.Title);
-
-            IWebElement query = driver.FindElement(By.Name("q"));
-            query.SendKeys("Brother International");
-            query.Submit();
-            Console.WriteLine(driver.Title);
-            Assert.AreEqual("Brother International - Google zoeken", driver.Title);
-            driver.Quit();
-        }        
     }
 }
