@@ -11,7 +11,7 @@ namespace BrowserStackTest
     {
 
         [Test]
-      public void TestVPNSite()
+        public void TestVPNSite()
         {
             ChromeOptions options = new ChromeOptions();
 

@@ -17,6 +17,7 @@ namespace BrowserStackTest
         }
 
         [Test]
+        [Category("Production")]
         [Parallelizable]
         [Obsolete]
         public void UserLogin1()
