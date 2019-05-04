@@ -11,6 +11,8 @@ namespace BrowserStackTest
     {
 
         [Test]
+        [Category("NonProduction")]
+        [Category("Production")]
         public void TestVPNSite()
         {
             ChromeOptions options = new ChromeOptions();
