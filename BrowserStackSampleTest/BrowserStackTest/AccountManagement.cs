@@ -23,6 +23,7 @@ namespace BrowserStackTest
         [Obsolete]
         public void UserLogin1()
         {
+            //This is for auto merge and auto delete branch
             IWebDriver driver;
             ChromeOptions options = new ChromeOptions();
             options.AddAdditionalCapability("os_version", "10", true);
