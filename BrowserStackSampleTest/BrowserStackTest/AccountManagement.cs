@@ -17,6 +17,7 @@ namespace BrowserStackTest
         }
 
         [Test]
+        [Category("NonProduction")]
         [Category("Production")]
         [Parallelizable]
         [Obsolete]
