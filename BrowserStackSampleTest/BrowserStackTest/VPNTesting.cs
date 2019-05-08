@@ -18,6 +18,7 @@ namespace BrowserStackTest
             ChromeOptions options = new ChromeOptions();
 
             string username = Environment.GetEnvironmentVariable("BROWSERSTACK_USERNAME");
+            string test = Environment.GetEnvironmentVariable("TestVariableName");
             string accessKey = Environment.GetEnvironmentVariable("BROWSERSTACK_ACCESS_KEY");
             string browserStackLocal = Environment.GetEnvironmentVariable("BROWSERSTACK_LOCAL");
             string browserStackLocalIdentifier = Environment.GetEnvironmentVariable("BROWSERSTACK_LOCAL_IDENTIFIER");
